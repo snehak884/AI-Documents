@@ -119,8 +119,35 @@ Developer pushes code → Agent deploys automatically → If error occurs → Ag
 └─────────────────────────────────────────────────────────┘
 ```
 
----
 
-**That's it!** This is all you need to explain to your manager. Short and clear. 
+Agentic deployment uses AI (via Azure OpenAI API key) to automatically deploy code and fix common deployment errors. However, WE control everything the agent can do by configuring rules in advance—we decide which errors it can auto-fix, which require approval, and who must approve. For example, we can allow auto-fix for disk space issues in dev/staging, but require your approval for ANY change in production. The agent only follows our pre-defined rules, not its own decisions
 
-Would you like me to make this even shorter?
+
+```
+┌──────────────────────────────────────────────────────────┐
+│  AGENTIC DEPLOYMENT EXPLANATION                          │
+├──────────────────────────────────────────────────────────┤
+│                                                           │
+│  What is it?                                             │
+│  → AI-powered deployment automation                      │
+│  → Deploys code and fixes common errors automatically    │
+│                                                           │
+│  ⚠️ CRITICAL: Who controls what agent does?             │
+│  → WE DO (during configuration)                          │
+│  → We define every allowed action in advance             │
+│  → Agent follows OUR rules, not its own decisions        │
+│                                                           │
+│  Example configuration:                                  │
+│  ┌────────────────────────────────────────────────┐     │
+│  │ Development: Agent can auto-fix disk/cache     │     │
+│  │ Staging: Agent needs approval for DB changes   │     │
+│  │ Production: Agent CANNOT fix anything alone    │     │
+│  │             Always requires approval │     │
+│  └────────────────────────────────────────────────┘     │
+│                                                                                   │
+│                           │
+│                                                           │
+└──────────────────────────────────────────────────────────┘
+
+
+
