@@ -1,8 +1,8 @@
-# Simple Manager Explanation: Copilot vs Agentic Deployment
+Copilot vs Agentic Deployment
 
 ---
 
-## Part 1: What's the Difference?
+ What's the Difference?
 
 ### GitHub Copilot / Cursor = **Code Assistant**
 **What it does:** Helps developers write code faster (like autocomplete for coding)
@@ -94,7 +94,6 @@ Developer pushes code → Agent deploys automatically → If error occurs → Ag
 
 ---
 
-## One-Slide Explanation
 
 ```
 ┌─────────────────────────────────────────────────────────┐
