@@ -74,11 +74,7 @@ Developer pushes code → Agent deploys automatically → If error occurs → Ag
 
 **Cost:** ~€100/month
 
-**ROI:** Break-even in 5 months (saves ~€1,300/month in developer time)
-
 ---
-
-## Quick Summary for Manager
 
 **Copilot vs Agentic:**
 - Copilot = assists with writing code
